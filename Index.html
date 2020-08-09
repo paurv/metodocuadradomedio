@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  *:focus {
+    outline: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 50%;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  th {
+    background-color: #1359c4;
+    color: white;
+  }
+
+  input{
+    padding-top: 4px;
+      padding-bottom: 3px;
+      font-size: 15px;
+      border-radius: 10px;
+      border-width: 1px;
+      border-color: #cacaca;
+  }
+
+  .myButton {
+    background-color: #4564c7;
+      border-radius: 28px;
+      border: transparent;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 14px;
+      padding: 10px 25px;
+      text-decoration: none;
+
+  }
+
+  .myButton:hover {
+  	background-color:#2a58bd;
+  }
+</style>
+<link rel="shortcut icon" href="logo.png" />
+<title>MtCM</title>
+</head>
+<body>
+  <div style="margin-left: 25%; margin-right: 25%; margin-top: 40px; text-align: center;">
+    <h2>Metodo Cuadrado Medio</h2>
+    <div style="margin-left: 30%; margin-right: 30%;">
+      <form action="" style="text-align: left; margin-bottom: 20px;">
+        <label for="semilla">Semilla</label><br>
+        <input type="number" id="id-semilla" name="semilla"><br><br>
+        <label for="dsig">Digitos Significativos</label><br>
+        <input type="number" id="id-dsig" name="dsig" ><br><br>
+        <label for="gen">Cuantos datos desea generar?</label><br>
+        <input type="number" id="id-gen" name="gen" ><br><br>
+        <button class="myButton" type="button" onclick="cargarDatos()">Generar</button>
+      </form>
+    </div>
+    <table id="t01" style="margin-left: auto; margin-right: auto;" >
+        <tr>
+          <th id="tf-1" value="0">n</th>
+          <th>R(n)</th> 
+          <th>R(n)<sup>2</sup></th>
+          <th>M.R(n)<sup>2</sup></th>
+        </tr>   
+    </table>
+      <br>
+  </div>
+<script src="js/controlador.js"></script>
+</body>
+</html>
