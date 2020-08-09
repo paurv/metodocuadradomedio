@@ -13,7 +13,6 @@ function cargarDatos(){
     var semilla =parseInt(x1);
     var digSig = parseInt(x2);
     var restr = parseInt(x3);
-    console.log(`LA VARIABLE restr es ${typeof(restr)}`);
     if(x1 =="" || x2 =="" || x3==""){
         alert("Por favor llene los campos");
         return;
