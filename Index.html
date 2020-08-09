@@ -52,33 +52,44 @@
   .myButton:hover {
   	background-color:#2a58bd;
   }
+
+  .caja-gen{
+    background-color: #ededed; 
+    border-radius: 20px; 
+    padding: 15px; 
+    padding-left: 40px;
+    padding-top: 30px;
+  }
 </style>
 <link rel="shortcut icon" href="logo.png" />
 <title>MtCM</title>
 </head>
 <body>
-  <div style="margin-left: 25%; margin-right: 25%; margin-top: 40px; text-align: center;">
-    <h2>Metodo Cuadrado Medio</h2>
-    <div style="margin-left: 30%; margin-right: 30%;">
-      <form action="" style="text-align: left; margin-bottom: 20px;">
-        <label for="semilla">Semilla</label><br>
-        <input type="number" id="id-semilla" name="semilla"><br><br>
-        <label for="dsig">Digitos Significativos</label><br>
-        <input type="number" id="id-dsig" name="dsig" ><br><br>
-        <label for="gen">Cuantos datos desea generar?</label><br>
-        <input type="number" id="id-gen" name="gen" ><br><br>
-        <button class="myButton" type="button" onclick="cargarDatos()">Generar</button>
-      </form>
+  <h2 style="margin-top: 50px; text-align: center;">Metodo Cuadrado Medio</h2>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <div style="display:inline; width: 370px; margin-right: 20px;">
+      <div class="caja-gen">
+        <form action="" style="text-align: left; margin-bottom: 20px;">
+          <label for="semilla">Semilla</label><br>
+          <input type="number" id="id-semilla" name="semilla"><br><br>
+          <label for="dsig">Digitos Significativos</label><br>
+          <input type="number" id="id-dsig" name="dsig" ><br><br>
+          <label for="gen">Cuantos datos desea generar?</label><br>
+          <input type="number" id="id-gen" name="gen" ><br><br>
+          <button class="myButton" type="button" onclick="cargarDatos()">Generar</button>
+        </form>
+      </div>
     </div>
-    <table id="t01" style="margin-left: auto; margin-right: auto;" >
+    <div style="display:inline; width: 540px;">
+      <table id="t01" style="    width: 520px;" >
         <tr>
           <th id="tf-1" value="0">n</th>
           <th>R(n)</th> 
           <th>R(n)<sup>2</sup></th>
           <th>M.R(n)<sup>2</sup></th>
         </tr>   
-    </table>
-      <br>
+      </table><br>
+    </div>
   </div>
 <script src="js/controlador.js"></script>
 </body>
