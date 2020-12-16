@@ -1,5 +1,5 @@
 # Metodo Cuadrado Medio
-Pequeña calculadora para generar números pseudo-aleatorios a traves del metodo congruencial.
+Pequeña calculadora para generar números pseudo-aleatorios a traves del metodo cuadrado medio.
 
 ## Definicion
 Este método comienza con un número inicial o semilla, este es
